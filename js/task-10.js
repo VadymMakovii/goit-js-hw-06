@@ -28,10 +28,9 @@ function createBoxes(number) {
 
 
 function destroyBoxes() {
-  const customEl = containerEl.querySelectorAll('div');
-  customEl.forEach(element => element.remove());
+  containerEl.innerHTML = '';
   inputEl.value = '';
- };
+};
 
 
 function getRandomHexColor() {
